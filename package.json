@@ -1,0 +1,20 @@
+{
+  "name": "psi-gulp-sample",
+  "version": "0.0.0",
+  "description": "Gulpfile example for PSI",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/addyosmani/psi-gulp-sample"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/addyosmani/psi-gulp-sample/issues"
+  },
+  "homepage": "https://github.com/addyosmani/psi-gulp-sample",
+  "devDependencies": {
+    "gulp": "^3.7.0",
+    "psi": "0.0.1"
+  }
+}
