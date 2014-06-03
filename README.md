@@ -6,6 +6,8 @@ Sample [Gulp](http://gulpjs.com) project using [PSI](https://github.com/addyosma
 ## Install
 
 ```sh
+$ git clone git://github.com/addyosmani/psi-gulp-sample.git
+$ cd psi-gulp-sample
 $ npm install
 ```
 
