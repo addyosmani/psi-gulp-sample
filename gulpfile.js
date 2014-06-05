@@ -8,13 +8,13 @@ var key = '';
 // Following this guide: 
 // https://developers.google.com/speed/docs/insights/v1/getting_started
 
-gulp.task('mobile', function () {
+gulp.task('mobile', function (cb) {
 	return psi({
 		// key: key
 	    nokey: 'true',
 	    url: site,
 	    strategy: 'mobile',
-	});
+	}, cb);
 });
 
 gulp.task('desktop', function () {
@@ -23,7 +23,7 @@ gulp.task('desktop', function () {
 	    // key: key,
 	    url: site,
 	    strategy: 'desktop',
-	});
+	}, cb);
 });
 
 gulp.task('default', ['mobile']);
