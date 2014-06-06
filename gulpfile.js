@@ -10,7 +10,7 @@ var key = '';
 
 gulp.task('mobile', function (cb) {
 	return psi({
-		// key: key
+	    // key: key
 	    nokey: 'true',
 	    url: site,
 	    strategy: 'mobile',
@@ -19,7 +19,7 @@ gulp.task('mobile', function (cb) {
 
 gulp.task('desktop', function () {
 	return psi({
-		nokey: 'true',
+	    nokey: 'true',
 	    // key: key,
 	    url: site,
 	    strategy: 'desktop',
