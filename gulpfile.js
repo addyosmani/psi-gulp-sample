@@ -9,7 +9,7 @@ var key = '';
 // https://developers.google.com/speed/docs/insights/v1/getting_started
 
 gulp.task('mobile', function (cb) {
-	return psi({
+	psi({
 	    // key: key
 	    nokey: 'true',
 	    url: site,
@@ -18,7 +18,7 @@ gulp.task('mobile', function (cb) {
 });
 
 gulp.task('desktop', function () {
-	return psi({
+	psi({
 	    nokey: 'true',
 	    // key: key,
 	    url: site,
