@@ -17,7 +17,7 @@ gulp.task('mobile', function (cb) {
 	}, cb);
 });
 
-gulp.task('desktop', function () {
+gulp.task('desktop', function (cb) {
 	psi({
 	    nokey: 'true',
 	    // key: key,
