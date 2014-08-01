@@ -10,19 +10,19 @@ var key = '';
 
 gulp.task('mobile', function (cb) {
 	psi({
-	    // key: key
-	    nokey: 'true',
-	    url: site,
-	    strategy: 'mobile',
+		// key: key
+		nokey: 'true',
+		url: site,
+		strategy: 'mobile',
 	}, cb);
 });
 
 gulp.task('desktop', function (cb) {
 	psi({
-	    nokey: 'true',
-	    // key: key,
-	    url: site,
-	    strategy: 'desktop',
+		// key: key,
+		nokey: 'true',
+		url: site,
+		strategy: 'desktop',
 	}, cb);
 });
 
