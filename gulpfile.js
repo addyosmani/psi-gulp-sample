@@ -9,21 +9,21 @@ var key = '';
 // https://developers.google.com/speed/docs/insights/v1/getting_started
 
 gulp.task('mobile', function (cb) {
-	psi({
-	    // key: key
-	    nokey: 'true',
-	    url: site,
-	    strategy: 'mobile',
-	}, cb);
+  psi({
+      // key: key
+      nokey: 'true',
+      url: site,
+      strategy: 'mobile',
+  }, cb);
 });
 
 gulp.task('desktop', function (cb) {
-	psi({
-	    nokey: 'true',
-	    // key: key,
-	    url: site,
-	    strategy: 'desktop',
-	}, cb);
+  psi({
+      // key: key,
+      nokey: 'true',
+      url: site,
+      strategy: 'desktop',
+  }, cb);
 });
 
 gulp.task('default', ['mobile']);
