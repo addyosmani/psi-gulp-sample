@@ -15,6 +15,6 @@
   "homepage": "https://github.com/addyosmani/psi-gulp-sample",
   "devDependencies": {
     "gulp": "^3.7.0",
-    "psi": "0.0.1"
+    "psi": "^1.0.2"
   }
 }

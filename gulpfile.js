@@ -8,22 +8,27 @@ var key = '';
 // Following this guide: 
 // https://developers.google.com/speed/docs/insights/v1/getting_started
 
-gulp.task('mobile', function (cb) {
-	return psi({
-		// key: key
-	    nokey: 'true',
-	    url: site,
-	    strategy: 'mobile',
-	}, cb);
+gulp.task('mobile', function () {
+    return psi(site, {
+        // key: key
+        nokey: 'true',
+        strategy: 'mobile',
+    }, function (err, data) {
+        console.log(data.score);
+        console.log(data.pageStats);
+    });
 });
 
 gulp.task('desktop', function () {
-	return psi({
-		nokey: 'true',
-	    // key: key,
-	    url: site,
-	    strategy: 'desktop',
-	}, cb);
+    return psi(site, {
+        nokey: 'true',
+        // key: key,
+        strategy: 'desktop',
+    }, function (err, data) {
+        console.log(data.score);
+        console.log(data.pageStats);
+    });
 });
 
 gulp.task('default', ['mobile']);
+
