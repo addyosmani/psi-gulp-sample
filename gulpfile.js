@@ -3,9 +3,9 @@ var psi = require('psi');
 var site = 'http://www.html5rocks.com';
 var key = '';
 
-// TODO FOR YOU:
-// Register for own key over at https://console.developers.google.com/
-// Following this guide: 
+// Please feel free to use the `nokey` option to try out PageSpeed
+// Insights as part of your build process. For more frequent use, 
+// we recommend registering for your own API key. For more info:
 // https://developers.google.com/speed/docs/insights/v1/getting_started
 
 gulp.task('mobile', function () {
@@ -31,4 +31,3 @@ gulp.task('desktop', function () {
 });
 
 gulp.task('default', ['mobile']);
-
